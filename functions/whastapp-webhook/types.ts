@@ -1,4 +1,3 @@
-// Tipos para WhatsApp Webhook
 export interface WhatsAppWebhookBody {
   object: string;
   entry: Array<{
