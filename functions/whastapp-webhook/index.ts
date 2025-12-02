@@ -3,8 +3,8 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 import type { WhatsAppWebhookBody } from "./types.ts";
 
 // Environment variables validation
-const SUPABASE_URL = Deno.env.get("ENV_SUPABASE_URL");
-const SUPABASE_ANON_KEY = Deno.env.get("ENV_SUPABASE_ANON_KEY");
+const SUPABASE_URL = Deno.env.get("SUPABASE_URL");
+const SUPABASE_ANON_KEY = Deno.env.get("SUPABASE_ANON_KEY");
 const VERIFY_TOKEN = Deno.env.get("ENV_VERIFY_TOKEN");
 
 if (!SUPABASE_URL || !SUPABASE_ANON_KEY || !VERIFY_TOKEN) {
